@@ -1,0 +1,806 @@
+# Emulator List
+
+This is just simply a list of systems, emulators available, rom formats, and bios required. 
+
+* This list is extremely incomplete
+* Libretro = RetroArch
+* This doesn't take into account if the emulator works on the Retroid Pocket 3 Plus
+* Some BIOS are optional 
+* Some BIOS for RetroArch need to be in folders
+* RetroArch BIOS need to be place in the `RetroArch\system` folder
+* Anything `highlighted` in the `Format` field is supported by the Retroid Launcher
+
+## 3DO Interactive Multiplayer
+Category|Information
+:-------|:----------
+Libretro Cores| Opera
+Format|.iso, .chd, .bin/.cue
+Required BIOS| panafz1.bin, panafz10.bin, panafz10-norsa.bin, panafz10e-anvil.bin, panafz10e-anvil-norsa.bin, panafz1j.bin, panafz1j-norsa.bin, goldstar.bin, sanyotry.bin, 3do_arcade_saot.bin
+
+## Amstrad CPC
+Category|Information
+:-------|:----------
+Libretro Cores| Caprice32 
+Standalone Emulators| andcpc, CPCDroid, Droid-CPC
+Format|.cpc, .dsk, .zip, .7z|
+
+## Arcade
+Category|Information
+:-------|:----------
+Libretro Cores| Final Burn Neo, Final Burn Alpha, Flycast, MAME-current, MAME 2000, MAME 2003 Midway, MAME 2003, MAME 2010
+Format|`.zip`
+BIOS Folder Name (Final Burn)|`RetroArch\system\fbneo\`, `RetroArch\system\fbneo\cheats\`, `RetroArch\system\fbneo\samples\`
+BIOS Folder Name (MAME)|`RetroArch\system\mame2003-plus\samples\`
+Required BIOS|bubsys.zip, cchip.zip, channelf.zip, coleco.zip, decocass.zip, fdsbios.zip, isgsm.zip, midssio.zip, msx.zip, namcoc69.zip, namcoc70.zip, namcoc75.zip, neocdz.zip, neogeo.zip, ngp.zip, nmk004.zip, pgm.zip, skns.zip, spec128.zip, spec128k.zip, spec48k.zip, spectrum.zip, ym2608.zip
+
+## Arduboy
+Category|Information
+:-------|:----------
+Libretro Cores| arduous
+Format|.hex|
+
+## Atari 2600
+Category|Information
+:-------|:----------
+Libretro Cores| Stella, Stella 2014
+Format|.a26, .bin, .zip, .7z|
+
+## Atari 5200
+Category|Information
+:-------|:----------
+Libretro Cores| a5200, Atari800
+Format|.a52, .bin, .zip, .7z
+Required BIOS| 5200.rom, ATARIBAS.ROM
+
+## Atari 7800
+Category|Information
+:-------|:----------
+Libretro Cores| ProSystem
+Format|.a78, .zip
+Required BIOS| 7800 BIOS (U).rom
+
+## Atari Jaguar
+Category|Information
+:-------|:----------
+Libretro Cores| Virtual Jaguar
+Format|.j64, .jag, .rom, .abs, .cof, .bin, .prg|
+
+## Atari Lynx
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle Lynx, Handy
+Format|.7z, `.lnx`, `.zip`
+Required BIOS| lynxboot.img
+
+## Atari ST/STE/TT/Falcon
+Category|Information
+:-------|:----------
+Libretro Cores| Hatari
+Format|.st, .msa, .stx, .dim, .ipf, .zip
+Required BIOS| tos.img
+
+## Bandai WonderSwan
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle Cygne
+Format|`.ws`, .pc2, `.zip`, .7z|
+
+## Bandai WonderSwan Color
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle Cygne
+Format|`.ws2`, .pc2, `.zip`, .7z|
+
+## Chai Love
+Category|Information
+:-------|:----------
+Libretro Cores| Chai Love
+Format|.chai, .chailove|
+
+## CHIP-8/S-CHIP/XO-CHIP
+Category|Information
+:-------|:----------
+Libretro Cores| JAXE
+Format|.ch8, .sc8, .xo8|
+
+## Coleco Vision
+Category|Information
+:-------|:----------
+Libretro Cores| blueMSX, Gearcoleco
+Format|.rom, .ri, .mx1, .mx2, .col, .dsk, .cas, .sg, .sc, .m3u, .zip, .7z
+BIOS Folder Name|`RetroArch\system\Databases\*`, `RetroArch\system\Machines\*`
+Required BIOS| coleco.rom, [blueMSX](http://bluemsx.msxblue.com/download.html)
+
+## Commodore Amiga
+Category|Information
+:-------|:----------
+Libretro Cores| PUAE 2021, PUAE
+Format|.adf, .hdf, .lha, .zip
+Required BIOS| kick33180.A500, kick34005.A500, kick40068.A1200
+
+## Commodore Amiga CD32
+Category|Information
+:-------|:----------
+Libretro Cores| PUAE 2021, PUAE
+Format|.cue, .ccd, .chd, .lha, .nrg, .mds, .iso.
+Required BIOS| kick40060.CD32, kick40060.CD32.ext
+
+## Commodore C128
+Category|Information
+:-------|:----------
+Libretro Cores| VICE x128
+Format|.d64, .d71, .d80, .d81, .d82, .g64, .g41, .x64, .t64, .tap, .prg, .p00, .crt, .bin, .zip, .gz, .d6z, .d7z, .d8z, .g6z, .g4z, .x6z, .cmd, .m3u, .vsf, .nib, .nbz
+Required BIOS| JiffyDOS_C128.bin, JiffyDOS_C64.bin, JiffyDOS_1541-II.bin, JiffyDOS_1571_repl310654.bin, JiffyDOS_1581.bin
+
+## Commodore C64
+Category|Information
+:-------|:----------
+Libretro Cores| Frodo, VICE x64 fast, VICE x64sc accurate
+Format|.d64, .zip, .7z, .t64, .crt, .prg, .nib, .tap|
+
+## Commodore C64 SuperCPU
+Category|Information
+:-------|:----------
+Libretro Cores| VICE xscpu64
+Format|.d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m
+Required BIOS| JiffyDOS_C64.bin, JiffyDOS_1541-II.bin, JiffyDOS_1571_repl310654.bin, JiffyDOS_1581.bin
+
+## Commodore CBM-II 5x0
+Category|Information
+:-------|:----------
+Libretro Cores| VICE xcbm5x0
+Format|.d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m|
+
+## Commodore CBM-II 6x0/7x0
+Category|Information
+:-------|:----------
+Libretro Cores| VICE xcbm2
+Format|.d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m|
+
+## Commodore PET
+Category|Information
+:-------|:----------
+Libretro Cores| VICE xpet
+Format|.d64, .zip, .7z, .t64, .crt, .prg, .nib, .tap|
+
+## Commodore PLUS/4
+Category|Information
+:-------|:----------
+Libretro Cores| xplus4
+Format|.d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m|
+
+## Commodore VICE-20
+Category|Information
+:-------|:----------
+Libretro Cores| VICE xvic
+Format|.d64, .zip, .7z, .t64, .crt, .prg, .nib, .tap|
+
+## Doom
+Category|Information
+:-------|:----------
+Libretro Cores| PRBoom
+Format|.wad, .iwad, .pwad|
+
+## DOS
+Category|Information
+:-------|:----------
+Libretro Cores| DOSBox-core, DOSBox-Pure, DOSBox-SVN 
+Standalone Emulators| DosBox Turbo, AnDOSBox, Magic Dosbox, aDOSBox
+Format|.dosz, .exe, .com, .img, .m3u, .bat, .conf, .cue, .zip|
+
+## Fairchild ChannelIF
+Category|Information
+:-------|:----------
+Libretro Cores| FreeChaFFormat|.bin, .rom, .chf, .zip
+Required BIOS| sl31253.bin, sl31254.bin, sl90025.bin
+
+## Famicom Disk System
+Category|Information
+:-------|:----------
+Libretro Cores| FCEUmm, Mesen, Nestopia UE
+Format|.fds, .zip, .7z
+Required BIOS| disksys.rom
+
+## GCE Vectrex
+Category|Information
+:-------|:----------
+Libretro Cores| VecX
+Format|.vec, .zip, .7z
+
+## Handheld Electronic
+Category|Information
+:-------|:----------
+Libretro Cores| GW
+Format|.mgw|
+
+## Java ME
+Category|Information
+:-------|:----------
+Libretro Cores| SquirrelJME
+Format|.jar, .sqc, .jam, .jad, .kjx
+Required BIOS| squirreljme.sqc
+
+## LowRes NX
+Category|Information
+:-------|:----------
+Libretro Cores| LowRes NX
+Format|.nx|
+
+## Lua Engine
+Category|Information
+:-------|:----------
+Libretro Cores| Lutro
+Format|.lutro, .love, .lua|
+
+## Mac II
+Category|Information
+:-------|:----------
+Libretro Cores| minivmac
+Format|.dsk, .img, .zip, .hvf, .cmd
+Required BIOS| MacII.ROM
+
+## Magnavox Odyssey 2
+Category|Information
+:-------|:----------
+Libretro Cores| O2EM
+Format|.bin
+Required BIOS| o2rom.bin, c52.bin, g7400.bin, jopac.bin
+
+## Mattel Intellivision
+Category|Information
+:-------|:----------
+Libretro Cores| FreeIntv
+Format|.bin, .int, .zip, .7z
+Required BIOS| exec.bin, grom.bin
+
+## Mega Duck/Cougar Boy
+Category|Information
+:-------|:----------
+Libretro Cores| SameDuck
+Format|.bin, .zip, .7z|
+
+## MSX
+Category|Information
+:-------|:----------
+Libretro Cores| blueMSX, fMSX
+Format|.cas, .dsk, .mx1, .mx2, .rom, .zip, .7z
+BIOS Folder Name|`RetroArch\system\Databases\*`, `RetroArch\system\Machines\*`
+Required BIOS| [blueMSX](http://bluemsx.msxblue.com/download.html)
+
+## MSX2
+Category|Information
+:-------|:----------
+Libretro Cores| blueMSX, fMSX
+Format|.cas, .dsk, .mx1, .mx2, .rom, .zip, .7z
+BIOS Folder Name|`RetroArch\system\Databases\*`, `RetroArch\system\Machines\*`
+Required BIOS| [blueMSX](http://bluemsx.msxblue.com/download.html)
+
+## NEC PC Engine
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle PCE Fast, Beetle SuperGrafx, PceEmu
+Format|`.pce`, .chd, `.zip`, .7z|
+
+## NEC PC Engine CD
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle PCE, Beetle PCE Fast, PceEmu
+Format|.pce, .ccd, .iso, .img, .chd, .cue
+Required BIOS| syscard3.pce _**Optional:**_ gexpress.pce, syscard1.pce, syscard2.pce
+
+## NEC PC-8800
+Category|Information
+:-------|:----------
+Libretro Cores| QUASI88
+Format|.d88, .u88, .m3u
+BIOS Folder Name|`RetroArch\system\quasi88\`
+Required BIOS| DISK.ROM, FONT.ROM, n88.rom, n88_0.rom, n88_1.rom, n88_2.rom, n88_3.rom, n88jisho.rom, n88knj1.rom, n88knj2.rom, n88n.rom, n88sub.rom
+
+## NEC PC-98
+Category|Information
+:-------|:----------
+Libretro Cores| Neko Project II Kai, Neko Project II
+Format|.d88, .fdi, .hdi, .zip
+BIOS Folder Name|`RetroArch\system\np2kai\`
+Required BIOS| font.bmp, FONT.ROM, bios.rom, itf.rom, sound.rom, bios9821.rom, d8000.rom, 2608_BD.WAV, 2608_SD.WAV, 2608_TOP.WAV, 2608_HH.WAV, 2608_TOM.WAV, 2608_RIM.WAV
+
+## NEC PC-FX
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle PC-FX
+Format|.chd, .zip, .cue, .ccd, .toc
+Required BIOS| pcfx.rom
+
+## Nintendo 3DS
+Category|Information
+:-------|:----------
+|Standalone Emulators| Citra, Citra Enhanced, Citra MMJ
+Format|`.3ds`, .3dsx|
+
+## Nintendo 64
+Category|Information
+:-------|:----------
+Libretro Cores| Mupen64Plus-Next GLES3, ParaLLEI 
+Standalone Emulators| M64Plus FZ
+Format|`.z64`, `.n64`, .v64, .zip|
+
+## Nintendo DS
+Category|Information
+:-------|:----------
+Libretro Cores| DeSmuME, DeSmuME 2015, melonDS 
+Standalone Emulators| Drastic, DeeS, melonDS, noods
+Format|`.nds`, .zip
+Required BIOS|_**Required for MelonDS or DeSmuME:**_ nds_bios_arm7.bin, nds_bios_arm9.bin, bios7.bin, bios9.bin|
+
+## Nintendo DSi
+Category|Information
+:-------|:----------
+Libretro Cores| melonDS 
+Standalone Emulators| melonDS
+Format|.dsi, .nds, .zip
+Required BIOS|bios7.bin, bios9.bin, firmware.bin, nand.bin, dsi_bios7.bin, dsi_bios9.bin, dsi_firmware.bin, dsi_nand.bin|
+
+## Nintendo Entertainment System
+Category|Information
+:-------|:----------
+Libretro Cores| FCEUmm, Messen, Nestopia UE, QuickNES
+Format|`.nes`, `.zip`, .7z|
+
+## Nintendo GameBoy Advance
+Category|Information
+:-------|:----------
+Libretro Cores| gpSP, mGBA, VBA Next, VBA-M 
+Standalone Emulators| Pizza Boy GBA, MyBoy!
+Format|`.gba`, `.zip`, .7z
+Optional BIOS| gba_bios.bin
+
+## Nintendo GameBoy
+Category|Information
+:-------|:----------
+Libretro Cores| Gambatte, Gearboy, mGBA, Messen-S, TGB Dual, VBA-M
+Format|`.gb`, .gbc, .dmg, `.zip`, .7z
+Optional BIOS| gb_bios.bin, sgb_bios.bin
+
+## Nintendo GameBoy Color
+Category|Information
+:-------|:----------
+Libretro Cores| Gambatte, Gearboy, mGBA, Messen-S, TGB Dual, VBA-M
+Format|`.gbc`, .gb, .dmg, `.zip`, .7z
+Optional BIOS| gbc_bios.bin, sgb_bios.bin
+
+## Nintendo Gamecube
+Category|Information
+:-------|:----------
+Standalone Emulators| Dolphin, Dolphin MMJ, Dolphin MMJR
+Format|`.iso`, `.gcz`, .rvz, .nkit|
+
+## Nintendo Pokemon Mini
+Category|Information
+:-------|:----------
+Libretro Cores| PokeMini
+Format|.min, .zip
+Optional BIOS| bios.min
+
+## Nintendo SNES
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle Supafraust, bsnes, bsnes-mercury (Balanced), bsnes-mercury (Performance), Messen-S, Snes9x 2002, Snes9x 2005, Snes9x 2005 Plus, Snes9x 2010 
+Standalone Emulators| Snes9x EX+, SuperRetro16, SNESDroid, MultiSneS16, EmuSNES XL
+Format|`.smc`, .sfc, `.zip`, .7z|
+
+## Nintendo Virtual Boy
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle VB
+Format|.vb, .vboy, `.zip`, .7z|
+
+## Nintendo Wii
+Category|Information
+:-------|:----------
+Standalone Emulators| Dolphin, Dolphin MMJ, Dolphin MMJR
+Format|`.iso`, .rvz, .nkit|
+
+## Oberon RISC Emulator
+Category|Information
+:-------|:----------
+Libretro Cores| Oberon RISC Emulator
+Format|.dsk|
+
+## Palm OS
+Category|Information
+:-------|:----------
+Libretro Cores| Mu
+Format|.prc, .pqa, .img, .pdb
+Required BIOS| palmos41-en-m515.rom
+
+## Philips CDi
+Category|Information
+:-------|:----------
+Libretro Cores| SAME CDi
+Format|.chd, .iso
+BIOS Folder Name|`RetroArch\system\same_cdi\bios\`
+Required BIOS| cdimono1.zip, cdimono2.zip, cdibios.zip
+
+## Pico-8
+Category|Information
+:-------|:----------
+Libretro Cores|  Retro8 
+Standalone Emulators| P8 Player
+Format|.png, .p8
+
+## RPG Maker 2000/2003
+Category|Information
+:-------|:----------
+Libretro Cores| EasyRPG
+Standalone Emulators| EasyRPG
+Format|.ldb, .zip, .easyrpg
+
+## RPG Maker XP/VX/VA/MV
+Category|Information
+:-------|:----------
+Standalone Emulators| Neko RPGXP Player, Joiplay
+Required BIOS|Various|
+
+## Sammy Atomiswave
+Category|Information
+:-------|:----------
+Libretro Cores| Flycast 
+Standalone Emulators| Redream, Flycast
+Format|.chd, .ist, .bin, .zip
+BIOS Folder Name (Flycast-lr)|`RetroArch\system\dc\`
+Required BIOS| awbios.zip
+
+## ScummVM
+Category|Information
+:-------|:----------
+Libretro Cores| ScummVM 
+Standalone Emulators| ScummVM
+Format|.zip, .scummvm|
+
+## Sega 32X
+Category|Information
+:-------|:----------
+Libretro Cores| PicoDrive
+Format|`.32x`, .7z, .bin, .md, .smd, `.zip`|
+
+## Sega CD/Mega CD
+Category|Information
+:-------|:----------
+Libretro Cores| Genesis Plus GX, Genesis Plus GX Wide, PicoDrive
+Format|`.chd`, .bin/cue
+Required BIOS| bios_CD_U.bin, bios_CD_E.bin, bios_CD_J.bin
+
+## Sega Dreamcast
+Category|Information
+:-------|:----------
+Libretro Cores| Flycast 
+Standalone Emulators| Flycast, Redream, Reicast
+Format|`.chd`, .bin/.cue, .bin/.gdi, .bin/cdi
+BIOS Folder Name (Flycast-lr)|`RetroArch\system\dc\`
+Required BIOS|_**Required for Flycast:**_ dc_boot.bin, dc_flash.bin
+
+## Sega Game Gear
+Category|Information
+:-------|:----------
+Libretro Cores| Gearsystem, Genesis Plus GX
+Format|`.gg`, .bin, `.zip`, .7z
+Optional BIOS| bios.gg
+
+## Sega Genesis/MegaDrive
+Category|Information
+:-------|:----------
+Libretro Cores| Genesis Plus GX, Genesis Plus GX Wide, PicoDrive
+Format|`.md`, .68k, .mdx, .sgd, .smd, .gen, .bin, `.zip`, .7z
+Optional BIOS| bios_MD.bin
+
+## Sega Master System
+Category|Information
+:-------|:----------
+Libretro Cores| Gearsystem, Genesis Plus GX, Genesis Plus GX Wide, PicoDrive
+Format|.7z, .bin, `.sms`, `.zip`
+Optional BIOS| bios_E.sms, bios_U.sms, bios_J.sms
+
+## Sega Naomi
+Category|Information
+:-------|:----------
+Libretro Cores| Flycast 
+Standalone Emulators| Flycast
+Format|.dat, .ist, .bin, .chd/.zip
+BIOS Folder Name (Flycast-lr)|`RetroArch\system\dc\`
+Required BIOS| naomi.zip, hod2bios.zip, f355dlx.zip, f355bios.zip, airlbios.zip
+
+## Sega Naomi 2
+Category|Information
+:-------|:----------
+Libretro Cores| Flycast 
+Standalone Emulators| Flycast
+Format|.chd/.zip
+BIOS Folder Name (Flycast-lr)|`RetroArch\system\dc\`
+Required BIOS| naomi2.zip
+
+## Sega Saturn
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle Saturn, YabSanshiro, Yabause 
+Standalone Emulators| YabaSanshiro
+Format|`.chd`, .iso, .bin/.cue
+Required BIOS|_**Required for Beetle-Saturn:**_ sega_101.bin, mpr-17933.bin, mpr-18811-mx.ic1, mpr-19367-mx.ic1 _**Optional:**_ saturn_bios.bin
+
+## Sega SG-1000
+Category|Information
+:-------|:----------
+Libretro Cores| Gearsystem, Genesis Plus GX, Genesis Plus GX Wide, blueMSX
+Format|.7z, .bin, .sg, .zip
+BIOS Folder Name|`RetroArch\system\Databases\*`, `RetroArch\system\Machines\*`
+Required BIOS| [blueMSX](http://bluemsx.msxblue.com/download.html)
+
+## Sega VMU
+Category|Information
+:-------|:----------
+Libretro Cores| VeMUlator
+Format|.vms, .bin|
+
+## Sharp X1
+Category|Information
+:-------|:----------
+Libretro Cores| X Millennium
+Format|.dx1, .zip, .2d, .2hd, .tfd, .d88, .88d, .hdm, .xdf, .dup, .cmd
+BIOS Folder Name|`RetroArch\system\xmil\`
+Required BIOS| IPLROM.X1, IPLROM.X1T
+
+## Sharp X68000
+Category|Information
+:-------|:----------
+Libretro Cores| PX68k
+Format|.dim, .m3u
+BIOS Folder Name|`RetroArch\system\keropi\`
+Required BIOS| iplrom.dat, cgrom.dat, iplrom30.dat, iplromco.dat, iplromxv.dat
+
+## Sinclair ZX 81
+Category|Information
+:-------|:----------
+Libretro Cores| EightyOne
+Format|.p, .tzx, .zip|
+
+## Sinclair ZX Spectrum
+Category|Information
+:-------|:----------
+Libretro Cores| Fuse
+Format|.sna, .szx, .z80, .tap, .tzx, .gz, .udi, .mgt, .img, .trd, .scl, .dsk|
+
+## SNK Neo Geo CD
+Category|Information
+:-------|:----------
+Libretro Cores| Final Burn Neo, NeoCD
+Format|.cue, .chd
+BIOS Folder Name (Final Burn Neo)|`RetroArch\system\fbneo\`
+BIOS Folder Name (NeoCD-lr)|`RetroArch\system\neocd\`
+Required BIOS| neocd_f.rom, neocd_sf.rom, front-sp1.bin, neocd_t.rom, neocd_st.rom, top-sp1.bin, neocd_z.rom, neocd_sz.rom, neocd.bin, ng-lo.rom, 000-lo.lo, uni-bioscd.rom, neocd.zip
+
+<details>
+<summary>Final Burn Neo subsystem information</summary>
+<br>
+
+* For NeoGeo CD to work on Final Burn Neo the roms need to be placed in a `neocd\` folder
+* Example:
+
+> roms\neocd\King of Fighters '98, The - Dream Match Never Ends ~ The King of Fighters '98 - The Slugfest (Japan) (En,Ja).bin
+
+> roms\neocd\King of Fighters '98, The - Dream Match Never Ends ~ The King of Fighters '98 - The Slugfest (Japan) (En,Ja).cue
+
+</details>
+
+## SNK Neo Geo Pocket
+Category|Information
+:-------|:----------
+Libretro Cores| Beetle NeoPop, RACE
+Format|.ngp, .ngc, .zip, .7z|
+
+## Sony PlayStation
+Category|Information
+:-------|:----------
+Libretro Cores| DuckStation, PCSX-ReArmed, SwanStation 
+Standalone Emulators| Avocado, DuckStation,  ePSXe, FPse, XEBRA
+Format|`.chd`, `.pbp`, .bin/.cue, .m3u
+Required BIOS| scph5500.bin, scph5501.bin, scph5502.bin, psxonpsp660.bin
+
+## Sony PlayStation 2
+Category|Information
+:-------|:----------
+Standalone Emulators| AetherSX2
+Format|.iso, .chd, .bin/cue
+Required BIOS| Any 4MB PS2 bios in .bin format
+
+## Sony PlayStation Portable
+Category|Information
+:-------|:----------
+Libretro Cores| PPSSPP 
+Standalone Emulators| PPSSPP, PPSSPP-Gold
+Format|`.iso`, .cso, .pbp, .chd|
+
+## Thomson MO/TO
+Category|Information
+:-------|:----------
+Libretro Cores| Theodore
+Format|.fd, .sap, .k7, .m7, .m5, .rom|
+
+## TIC-80
+Category|Information
+:-------|:----------
+Libretro Cores| TIC-80
+Format|.tic|
+
+## Uzebox
+Category|Information
+:-------|:----------
+Libretro Cores| Uzem
+Format|.uze|
+
+## VaporSpec
+Category|Information
+:-------|:----------
+Libretro Cores| VaporSpec
+Format|.vaporbin|
+
+## WASM-4
+Category|Information
+:-------|:----------
+Libretro Cores| WASM4
+Format|.wasm|
+
+## Watara Supervision
+Category|Information
+:-------|:----------
+Libretro Cores| Potator
+Format|.bin, .sv|
+
+## Wolfenstein 3D
+Category|Information
+:-------|:----------
+Libretro Cores| ECWolf
+Format|.wl6, .n3d, .sod, .sdm, .wl1, .pk3, .exe
+Required BIOS| ecwolf.pk3
+
+# M3U Files
+
+### M3U File Generator python script
+
+* [M3U File Generator python script](https://raw.githubusercontent.com/Jetup13/Retroid-Pocket-3-Plus-Wiki/main/Files/Backup/M3UGenerator.py) (Right-Click > Download)
+
+1. Place script inside folder you want to generate m3u
+2. Type prefix (if using setup 2 or 3) or press enter
+
+### Setup 1
+
+<details>
+<summary>Setup 1: M3U file normal usage</summary>
+<br>
+
+The `.m3u` format is a playlist file. It's highly recommended to use `.m3u` files for your multi disc games. They are simple to create too:
+
+1. Create a text file
+
+2. Rename `.txt` to `.m3u`
+
+3. Open the `.m3u` and add your disc to each line
+
+> Example 1
+```
+Chrono Cross (USA) (Disc 1).chd
+Chrono Cross (USA) (Disc 2).chd
+```
+
+> Example 2
+```
+Final Fantasy IX (USA) (Disc 1).cue
+Final Fantasy IX (USA) (Disc 2).cue
+Final Fantasy IX (USA) (Disc 3).cue
+Final Fantasy IX (USA) (Disc 4).cue
+```
+
+4. Save file and place in the same folder as the content
+
+</details>
+
+### Setup 2
+
+<details>
+<summary>Setup 2: M3U file with content in other folders</summary>
+<br>
+
+You can also have your content in different folders. This is useful for front-ends that might scan disc and m3u files, leading to multiple files. Simply write the path to the content in the m3u files.
+
+1. Let's say you typically place your psx games in `/roms/psx/`.
+
+2. Now create a folder outside the psx folder. Let's name it `psxmutltidisc`.
+
+3. As an example lets use Metal Gear Solid and place each disc in the newly created folder `/roms/psxmultidisc/` folder. 
+
+4. Now you can simply write your m3u file exactly as such:
+
+```
+./../psxmultidisc/Metal Gear Solid (USA) (Disc 1) (Rev 1).chd
+./../psxmultidisc/Metal Gear Solid (USA) (Disc 2) (Rev 1).chd
+```
+
+5. Save and place the file in our example folder `/roms/psx/`
+
+Now your preferred front-end will only scan and show one file instead of three (in this case).
+
+</details>
+
+### Setup 3
+
+<details>
+<summary>Setup 3: M3U file with content in another folder for Duckstation</summary>
+<br>
+
+DuckStation requires URI paths if file is in a seperate directory.
+
+* Ensure DuckStation has permissions to the multidisc folder
+
+> Duckstation > ≡ > App Settings > Game List > Add Folder
+
+* You can quickly find out the path to the file in the menu above after adding the folder
+
+We'll use these paths in examples shown:
+
+Path|Note
+:---|:---|
+roms/psx/|Path of your normal psx games & m3u files
+roms/psxmulti/|Path of multidisc psx games
+
+* URI Path Example for `roms/psxmulti/`
+
+Path|Note
+:---|:---|
+`content://com.android.externalstorage.documents/tree/primary:roms%2Fpsxmulti/document/primary:roms%2Fpsxmulti%2F`|Internal Storage
+`content://com.android.externalstorage.documents/tree/STRINGOFNUMBERS&LETTERS:roms%2Fpsxmulti/document/STRINGOFNUMBERS&LETTERS:roms%2Fpsxmulti%2F`|Replace `STRINGOFNUMBERS&LETTERS` with your own
+
+* Cheat Sheet:
+
+Character|Encoded character|Note
+:--------|:----------------|:----
+`:`|`%3A`|Either character can be used
+`/`|`%2F`|Encoded character is required 
+Space|`%20`|Either character can be used
+
+Examples
+
+Path|Note
+:---|:---
+roms/psx/Chrono Cross (USA).m3u|
+roms/psxmulti/Chrono Cross (USA) (Disc 1).chd|
+roms/psxmulti/Chrono Cross (USA) (Disc 2).chd|
+`content://com.android.externalstorage.documents/tree/primary:roms%2Fpsxmulti/document/primary:roms%2Fpsxmulti%2FChrono Cross (USA) (Disc 1).chd`|m3u file line 1
+`content://com.android.externalstorage.documents/tree/primary:roms%2Fpsxmulti/document/primary:roms%2Fpsxmulti%2FChrono Cross (USA) (Disc 2).chd`|m3u file line 2
+
+_The M3U file will not work for anything but DuckStation._
+
+</details>
+
+# MSU-1 Files
+
+For MSU-1 to properly work:
+* All files need to have a common file name.
+* All files need to be in the same folder. 
+
+One patch file can be kept in the same folder if you want to utilize [soft patching](https://github.com/Jetup13/Retroid-Pocket-3-Plus-Wiki/wiki/RetroArch#softpatching) features. Otherwise patch the game with a [patcher](https://github.com/Jetup13/Retroid-Pocket-3-Plus-Wiki/wiki/Useful-Programs#patching-games). 
+
+`EarthBound (USA)` will be the common file name in the example below:
+
+File                   |Note
+:----------------------|:-----
+EarthBound (USA).bps   |Patch file. Only need 1 patch file.
+EarthBound (USA).ips   |Patch file. Only need 1 patch file.
+EarthBound (USA).msu   |MSU file.
+EarthBound (USA).sfc   |Game file.
+EarthBound (USA)-*.pcm |Music file.
+
+* [MSU1 Rename Scripts](https://raw.githubusercontent.com/Jetup13/Retroid-Pocket-3-Plus-Wiki/main/Files/Backup/MSU1Renamer.py) (Right-Click > Download)
+* The script will rename the .bps, .ips, .msu, and .pcm files after the .sfc file
+* The script will look in the same folder or sub-folders
+* If renaming multiple games create sub-folders for each game
+
+1. Place the script in the same folder as the `.sfc` and `.pcm` files
+2. Run script
