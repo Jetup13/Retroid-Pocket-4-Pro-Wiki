@@ -1,0 +1,14 @@
+```
+<ruleList>
+    <emulator name="Skyline">
+        <rule type="androidpackage">
+            <entry>skyline.emu/emu.skyline.EmulationActivity</entry>
+        </rule>
+    </emulator>
+    <emulator name="DOLPHIN-MMJR 2">
+        <rule type="androidpackage">
+            <entry>org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity</entry>
+        </rule>
+    </emulator>
+</ruleList>
+```
