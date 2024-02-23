@@ -5,7 +5,7 @@
             <entry>skyline.emu/emu.skyline.EmulationActivity</entry>
         </rule>
     </emulator>
-    <emulator name="DOLPHIN-MMJR 2">
+    <emulator name="DOLPHIN-MMJR2">
         <rule type="androidpackage">
             <entry>org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity</entry>
         </rule>
