@@ -27,5 +27,14 @@
         <platform>switch</platform>
         <theme>switch</theme>
     </system>
+    <system>
+        <name>moonlight</name>
+        <fullname>Moonlight Game Streaming</fullname>
+        <path>%ROMPATH%/moonlight</path>
+        <extension>.moonlight</extension>
+        <command label="Moonlight">%EMULATOR_Moonlight% %EXTRA_UUID%=%INJECT%=Moonlight.uuid %EXTRA_AppId%=%INJECT%=%BASENAME%.moonlight</command>
+        <platform>moonlight</platform>
+        <theme>moonlight</theme>
+    </system>
 </systemList>
 ```

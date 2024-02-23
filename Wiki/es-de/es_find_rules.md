@@ -10,5 +10,10 @@
             <entry>org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity</entry>
         </rule>
     </emulator>
+    <emulator name="Moonlight">
+        <rule type="androidpackage">
+            <entry>com.limelight/com.limelight.ShortcutTrampoline</entry>
+        </rule>
+    </emulator>
 </ruleList>
 ```
