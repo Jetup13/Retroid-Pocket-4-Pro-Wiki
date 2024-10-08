@@ -25,3 +25,18 @@ Simply add the commands to your `es_systems.cfg` file. You can edit the default 
 ```
         <command label="Skyline (Standalone)">%EMULATOR_Skyline% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
 ```
+
+# Nintendo Virtual Boy
+
+```
+    <system>
+        <name>virtualboy</name>
+        <fullname>Nintendo Virtual Boy</fullname>
+        <path>%ROMPATH%/virtualboy</path>
+        <extension>.bin .BIN .vb .VB .vboy .VBOY .7z .7Z .zip .ZIP</extension>
+        <command label="Virtual Virtual Boy">%EMULATOR_Virtual Virtual Boy% %ACTION%=android.intent.action.VIEW %DATA%=%ROMPROVIDER%</command>
+        <command label="Beetle VB">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=/storage/emulated/0/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=mednafen_vb_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <platform>virtualboy</platform>
+        <theme>virtualboy</theme>
+    </system>
+```
