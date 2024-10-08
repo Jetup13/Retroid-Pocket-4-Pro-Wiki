@@ -29,3 +29,13 @@ Simply add these commands to your `es_find_rules.xml` file. You can edit the def
         </rule>
     </emulator>
 ```
+
+# Virtual Virtual Boy
+
+```
+	<emulator name="Virtual Virtual Boy">
+		<rule type="androidpackage">
+			<entry>com.simongellis.vvb/com.simongellis.vvb.MainActivity</entry>
+		</rule>
+    </emulator>
+```
