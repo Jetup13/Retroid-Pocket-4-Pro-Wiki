@@ -3,31 +3,31 @@ Simply add these commands to your `es_find_rules.xml` file. You can edit the def
 # Dolphin MMJR2
 
 ```
-    <emulator name="DOLPHIN-MMJR2">
-        <rule type="androidpackage">
-            <entry>org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity</entry>
-        </rule>
-    </emulator>
+	<emulator name="DOLPHIN-MMJR2">
+		<rule type="androidpackage">
+			<entry>org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity</entry>
+		</rule>
+	</emulator>
 ```
 
 # Moonlight
 
 ```
-    <emulator name="Moonlight">
-        <rule type="androidpackage">
-            <entry>com.limelight/com.limelight.ShortcutTrampoline</entry>
-        </rule>
-    </emulator>
+	<emulator name="Moonlight">
+		<rule type="androidpackage">
+			<entry>com.limelight/com.limelight.ShortcutTrampoline</entry>
+		</rule>
+	</emulator>
 ```
 
 # Skyline
 
 ```
-    <emulator name="Skyline">
-        <rule type="androidpackage">
-            <entry>skyline.emu/emu.skyline.EmulationActivity</entry>
-        </rule>
-    </emulator>
+	<emulator name="Skyline">
+		<rule type="androidpackage">
+			<entry>skyline.emu/emu.skyline.EmulationActivity</entry>
+		</rule>
+	</emulator>
 ```
 
 # Virtual Virtual Boy
@@ -37,5 +37,5 @@ Simply add these commands to your `es_find_rules.xml` file. You can edit the def
 		<rule type="androidpackage">
 			<entry>com.simongellis.vvb/com.simongellis.vvb.MainActivity</entry>
 		</rule>
-    </emulator>
+	</emulator>
 ```
