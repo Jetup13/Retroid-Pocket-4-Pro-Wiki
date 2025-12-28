@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U Playlist Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        
+        .input-section {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        label:has(input[type="checkbox"]) {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .file-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.3s;
+            border: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .file-button:hover {
+            background: #5568d3;
+        }
+        
+        .file-button:active {
+            transform: scale(0.98);
+        }
+        
+        .file-list {
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        
+        .file-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .file-name {
+            flex: 1;
+            color: #333;
+            font-size: 14px;
+            word-break: break-all;
+        }
+        
+        .remove-btn {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 10px;
+            transition: background 0.3s;
+        }
+        
+        .remove-btn:hover {
+            background: #ee3f4d;
+        }
+        
+        .generate-btn {
+            width: 100%;
+            padding: 16px;
+            background: #10ac84;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .generate-btn:hover {
+            background: #0e9c75;
+        }
+        
+        .generate-btn:active {
+            transform: scale(0.98);
+        }
+        
+        .generate-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .clear-btn {
+            width: 100%;
+            padding: 12px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .clear-btn:hover {
+            background: #ee5a52;
+        }
+        
+        .tips-btn {
+            width: 100%;
+            padding: 12px;
+            background: #4834d4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        
+        .tips-btn:hover {
+            background: #3c2eb8;
+        }
+        
+        .tips-dropdown {
+            display: none;
+            flex-direction: column;
+            margin-top: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .tips-dropdown.show {
+            display: flex;
+        }
+        
+        .tip-link {
+            padding: 14px;
+            background: #f8f9fa;
+            color: #4834d4;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.2s;
+        }
+        
+        .tip-link:last-child {
+            border-bottom: none;
+        }
+        
+        .tip-link:hover {
+            background: #e9ecef;
+        }
+        
+        .naming-options {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .naming-options.show {
+            display: block;
+        }
+        
+        .naming-options h3 {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        
+        .naming-option {
+            margin-bottom: 8px;
+        }
+        
+        .auto-name-preview {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #1565c0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML M3U Generator</h1>
+        <p class="subtitle">Name .m3u, browse file(s), click Generate M3U File</p>
+        
+        <div class="input-section">
+            <label for="playlistName">M3U File Name</label>
+            <input type="text" id="playlistName" placeholder="M3U file (leave empty for auto-naming)" value="">
+        </div>
+        
+        <div class="naming-options" id="namingOptions">
+            <h3>Auto-naming Options</h3>
+            <div class="naming-option">
+                <label>
+                    <input type="checkbox" id="prettifyName"> Prettify (remove all tags)
+                </label>
+            </div>
+            <div class="naming-option">
+                <label>
+                    <input type="checkbox" id="includeRegion" checked> Include region
+                </label>
+            </div>
+            <div class="naming-option">
+                <label>
+                    <input type="checkbox" id="includeRevision"> Include revision
+                </label>
+            </div>
+            <div class="naming-option">
+                <label>
+                    <input type="checkbox" id="includeOther"> Include other tags
+                </label>
+            </div>
+            <div class="auto-name-preview" id="autoNamePreview"></div>
+        </div>
+        
+        <div class="input-section">
+            <label>
+                <input type="checkbox" id="includePathToggle"> Include prefix
+            </label>
+        </div>
+        
+        <div class="input-section" id="pathPrefixSection" style="display: none;">
+            <label for="pathPrefix">Prefix (optional)</label>
+            <input type="text" id="pathPrefix" placeholder="e.g., ../psxmultidisc/">
+            <small style="color: #666; font-size: 12px; margin-top: 5px; display: block;">
+                Leave empty for relative path or type prefix. (Dolphin requires hardcoded paths)
+            </small>
+        </div>
+        
+        <input type="file" id="fileInput" multiple accept=".chd,.cue,.dsk,.iso,.d88,.rvz,.gcz,.nkit">
+        <label for="fileInput" class="file-button">Browse Files</label>
+        
+        <button class="tips-btn" id="tipsBtn">Setup Tips</button>
+        <div class="tips-dropdown" id="tipsDropdown">
+            <a href="https://github.com/Jetup13/Retroid-Pocket-5-Wiki/wiki/Emulators-and-Formats#setup-3" target="_blank" class="tip-link">Duckstation Android Tip</a>
+            <a href="https://github.com/Jetup13/Retroid-Pocket-5-Wiki/wiki/Emulators-and-Formats#setup-4" target="_blank" class="tip-link">ES-DE Android Tip</a>
+            <a href="https://github.com/Jetup13/Retroid-Pocket-5-Wiki/wiki/Emulators-and-Formats#setup-5" target="_blank" class="tip-link">Dolphin Android Tip</a>
+        </div>
+        
+        <div class="file-list" id="fileList">
+            <div class="empty-state">No files added yet. Click "Browse Files" to start.</div>
+        </div>
+        
+        <button class="clear-btn" id="clearBtn" style="display: none;">Clear All Files</button>
+        <button class="generate-btn" id="generateBtn" disabled>Generate M3U File</button>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+        const generateBtn = document.getElementById('generateBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const playlistNameInput = document.getElementById('playlistName');
+        const includePathToggle = document.getElementById('includePathToggle');
+        const pathPrefixSection = document.getElementById('pathPrefixSection');
+        const pathPrefixInput = document.getElementById('pathPrefix');
+        const tipsBtn = document.getElementById('tipsBtn');
+        const tipsDropdown = document.getElementById('tipsDropdown');
+        const namingOptions = document.getElementById('namingOptions');
+        const prettifyName = document.getElementById('prettifyName');
+        const includeRegion = document.getElementById('includeRegion');
+        const includeRevision = document.getElementById('includeRevision');
+        const includeOther = document.getElementById('includeOther');
+        const autoNamePreview = document.getElementById('autoNamePreview');
+        
+        let files = [];
+        
+        const regions = ['USA', 'Japan', 'Europe', 'Sweden', 'Germany', 'Spain', 'Italy', 'UK', 'France', 'Japan, Asia', 'Asia', 'Canada', 'USA, Canada', 'Mexico'];
+        
+        includePathToggle.addEventListener('change', (e) => {
+            pathPrefixSection.style.display = e.target.checked ? 'block' : 'none';
+        });
+        
+        tipsBtn.addEventListener('click', () => {
+            tipsDropdown.classList.toggle('show');
+        });
+        
+        prettifyName.addEventListener('change', updateAutoName);
+        includeRegion.addEventListener('change', updateAutoName);
+        includeRevision.addEventListener('change', updateAutoName);
+        includeOther.addEventListener('change', updateAutoName);
+        
+        fileInput.addEventListener('change', (e) => {
+            const newFiles = Array.from(e.target.files);
+            files = [...files, ...newFiles];
+            updateFileList();
+            updateAutoName();
+            e.target.value = '';
+        });
+        
+        function parseFileName(filename) {
+            const nameWithoutExt = filename.replace(/\.(chd|cue|dsk|iso|d88|rvz|gcz|nkit)$/i, '');
+            
+            const discMatch = nameWithoutExt.match(/\(Dis[ck] \d+\)/i);
+            
+            let baseName = nameWithoutExt;
+            if (discMatch) {
+                baseName = nameWithoutExt.replace(/\(Dis[ck] \d+\)/gi, '').trim();
+            }
+            
+            const regionMatch = baseName.match(/\((USA|Japan|Europe|Sweden|Germany|Spain|Italy|UK|France|Japan, Asia|Asia|Canada|USA, Canada|Mexico)\)/);
+            const revMatch = baseName.match(/\(Rev \d+\)/i);
+            
+            const otherTags = [];
+            const tagMatches = baseName.matchAll(/\(([^)]+)\)/g);
+            for (const match of tagMatches) {
+                const tag = match[1];
+                if (!regions.includes(tag) && !tag.match(/^Rev \d+$/i) && !tag.match(/^Dis[ck] \d+$/i)) {
+                    otherTags.push(tag);
+                }
+            }
+            
+            let cleanName = baseName.replace(/\([^)]+\)/g, '').trim();
+            
+            return {
+                cleanName,
+                region: regionMatch ? regionMatch[1] : null,
+                revision: revMatch ? revMatch[0] : null,
+                otherTags,
+                fullName: baseName
+            };
+        }
+        
+        function generateAutoName() {
+            if (files.length === 0) return '';
+            
+            const parsed = files.map(f => parseFileName(f.name));
+            const cleanName = parsed[0].cleanName;
+            
+            if (prettifyName.checked) {
+                return cleanName;
+            }
+            
+            const parts = [cleanName];
+            
+            if (includeRegion.checked && parsed[0].region) {
+                parts.push(`(${parsed[0].region})`);
+            }
+            
+            if (includeRevision.checked) {
+                const revisions = parsed.map(p => p.revision).filter(r => r);
+                if (revisions.length > 0) {
+                    parts.push(revisions[0]);
+                }
+            }
+            
+            if (includeOther.checked && parsed[0].otherTags.length > 0) {
+                const allOtherTags = new Set();
+                parsed.forEach(p => p.otherTags.forEach(t => allOtherTags.add(t)));
+                allOtherTags.forEach(tag => parts.push(`(${tag})`));
+            }
+            
+            return parts.join(' ');
+        }
+        
+        function updateAutoName() {
+            if (files.length === 0) {
+                namingOptions.classList.remove('show');
+                return;
+            }
+            
+            namingOptions.classList.add('show');
+            const autoName = generateAutoName();
+            autoNamePreview.textContent = autoName ? `Preview: ${autoName}.m3u` : 'Preview: (no name generated)';
+        }
+        
+        function updateFileList() {
+            if (files.length === 0) {
+                fileList.innerHTML = '<div class="empty-state">No files added yet. Click "Browse Files" to start.</div>';
+                generateBtn.disabled = true;
+                clearBtn.style.display = 'none';
+            } else {
+                fileList.innerHTML = files.map((file, index) => `
+                    <div class="file-item">
+                        <span class="file-name">${file.name}</span>
+                        <button class="remove-btn" onclick="removeFile(${index})">Remove</button>
+                    </div>
+                `).join('');
+                generateBtn.disabled = false;
+                clearBtn.style.display = 'block';
+            }
+        }
+        
+        function removeFile(index) {
+            files.splice(index, 1);
+            updateFileList();
+            updateAutoName();
+        }
+        
+        clearBtn.addEventListener('click', () => {
+            files = [];
+            updateFileList();
+            updateAutoName();
+        });
+        
+        generateBtn.addEventListener('click', () => {
+            if (files.length === 0) return;
+            
+            let m3uContent;
+            
+            if (includePathToggle.checked) {
+                const prefix = pathPrefixInput.value.trim();
+                const separator = prefix && !prefix.endsWith('/') && !prefix.endsWith('\\') ? '/' : '';
+                m3uContent = files.map(file => `${prefix}${separator}${file.name}`).join('\n');
+            } else {
+                m3uContent = files.map(file => file.name).join('\n');
+            }
+            
+            let filename = playlistNameInput.value.trim();
+            if (!filename) {
+                filename = generateAutoName() || 'playlist';
+            }
+            
+            const blob = new Blob([m3uContent], { type: 'audio/x-mpegurl' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${filename}.m3u`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

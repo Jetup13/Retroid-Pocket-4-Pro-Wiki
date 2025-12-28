@@ -231,9 +231,9 @@ def generate_m3u(directory):
         tk.Radiobutton(cleaning_frame, text=text, variable=var, value=value).pack(anchor=tk.W)
 
     # Add the reload button to restart the program
-    tk.Button(root, text="Reload Profile", command=reload_program).pack(pady=10)
+    tk.Button(root, text="Reload Profile(s)", command=reload_program, bg="red", fg="white").pack(pady=10)
 
-    tk.Button(root, text="Submit", command=on_submit).pack(pady=10)
+    tk.Button(root, text="Submit", command=on_submit, bg="green", fg="white").pack(pady=10)
     root.mainloop()
 
 # Get the directory of the script
