@@ -3,7 +3,7 @@ import json
 import shutil
 import sys  # Import sys for restarting the program
 import tkinter as tk
-from tkinter import simpledialog, messagebox, ttk
+from tkinter import simpledialog, messagebox, ttk, filedialog
 
 def save_profile(profile_name, prefix):
     """Save the profile with the given name and prefix."""
@@ -23,7 +23,7 @@ def move_files_and_generate_m3u(directory, files_by_base, prefix="", add_folder_
     """Move files into separate directories based on M3U names and generate M3U files."""
     for base_name, filenames in files_by_base.items():
         m3u_name = f"{base_name}.m3u"
-        folder_name = f"{base_name}.m3u"
+        folder_name = os.path.join(directory, f"{base_name}.m3u")
         os.makedirs(folder_name, exist_ok=True)
         for filename in filenames:
             shutil.move(os.path.join(directory, filename), os.path.join(folder_name, filename))
@@ -58,7 +58,7 @@ def clean_m3u_files(directory):
 
 def move_files_to_main_directory(directory):
     """Moves all files from subfolders back to the main directory."""
-    move_response = messagebox.askyesno("Move Files", "Would you like to move files back into the script directory?")
+    move_response = messagebox.askyesno("Move Files", "Would you like to move files back into the directory?")
     if not move_response:
         return  # Exit if the user chooses "No"
 
@@ -87,13 +87,13 @@ def move_files_to_main_directory(directory):
                 shutil.move(os.path.join(root, file), os.path.join(directory, file))
             subfolders.append(root)  # Keep track of the subfolder paths
 
-    messagebox.showinfo("Info", "All files have been moved back into the script directory.")
+    messagebox.showinfo("Info", "All files have been moved back into the directory.")
 
 def delete_empty_subfolders(directory):
     """Delete only empty subfolders in the main directory."""
     warning_response = messagebox.askyesno(
         "Warning",
-        "This action will delete all empty subfolders under the script directory and cannot be undone. Do you want to proceed?"
+        "This action will delete all empty subfolders under the directory and cannot be undone. Do you want to proceed?"
     )
     if not warning_response:
         return  # Exit if the user chooses "No"
@@ -134,8 +134,42 @@ def generate_m3u(directory):
                 files_by_base[base_name] = set()
             files_by_base[base_name].add(filename)
 
+    def browse_folder():
+        """Open a folder browser dialog and update the current directory."""
+        folder_selected = filedialog.askdirectory(initialdir=directory, title="Select Folder")
+        if folder_selected:
+            # Update the directory label
+            directory_label.config(text=f"Current folder: {folder_selected}")
+            # Store the selected directory in the window for later use
+            root.selected_directory = folder_selected
+        # If nothing is selected, keep using the current directory
+
     def on_submit():
         """Handle the user's choice and execute the appropriate actions."""
+        nonlocal profiles  # Allow modification of outer scope profiles variable
+        
+        # Use the selected directory if available, otherwise use the default
+        working_directory = getattr(root, 'selected_directory', directory)
+        
+        # Regenerate files_by_base for the working directory
+        current_files_by_base = {}
+        for filename in os.listdir(working_directory):
+            if "(Disc" in filename or "(Disk" in filename:
+                base_name = os.path.splitext(os.path.basename(filename))[0]
+                base_name = base_name.split("(Disc")[0].strip()
+                base_name = base_name.split("(Disk")[0].strip()
+
+                # Handle revision names
+                rev_start = filename.find("(Rev")
+                if rev_start != -1:
+                    rev_end = filename.find(")", rev_start)
+                    if rev_end != -1:
+                        base_name += f" {filename[rev_start:rev_end + 1].strip()}"
+                
+                if base_name not in current_files_by_base:
+                    current_files_by_base[base_name] = set()
+                current_files_by_base[base_name].add(filename)
+        
         prefix_choice = var.get()
         prefix = ""
         move_files = False
@@ -148,8 +182,15 @@ def generate_m3u(directory):
             prefix = simpledialog.askstring("Input", "Enter prefix to add to the beginning of each line:\n\nExample if using placing disc outside of folder:\n../psxmulti/\n\nExample if using DuckStation on Android:\ncontent://com.android.externalstorage.documents/tree/primary:roms%2Fpsxmulti/document/primary:roms%2Fpsxmulti%2F")
         elif prefix_choice == "3":
             prefix = simpledialog.askstring("Input", "Enter prefix to add to the beginning of each line:")
-            profile_name = simpledialog.askstring("Input", "Enter a name for this profile:")
-            save_profile(profile_name, prefix)
+            if prefix is not None:  # Check if user didn't cancel
+                profile_name = simpledialog.askstring("Input", "Enter a name for this profile:")
+                if profile_name:  # Check if user didn't cancel
+                    save_profile(profile_name, prefix)
+                    # Reload profiles and update dropdown
+                    profiles = load_profiles()
+                    profile_dropdown['values'] = list(profiles.keys())
+                    messagebox.showinfo("Success", f"Profile '{profile_name}' has been created and added to the list!")
+            return
         elif prefix_choice == "4":
             profile_name = profile_var.get()
             prefix = profiles.get(profile_name, "")
@@ -158,37 +199,41 @@ def generate_m3u(directory):
             add_folder_name = messagebox.askyesno("Question", "Do you want to add the folder name to the prefix path?\nThis option is only used for Dolphin.")
             move_files = True
         elif prefix_choice == "6":
-            clean_m3u_files(directory)
+            clean_m3u_files(working_directory)
             return
         elif prefix_choice == "7":
-            move_files_to_main_directory(directory)
+            move_files_to_main_directory(working_directory)
             return
         elif prefix_choice == "8":
-            delete_empty_subfolders(directory)
+            delete_empty_subfolders(working_directory)
             return
 
         if move_files:
-            move_files_and_generate_m3u(directory, files_by_base, prefix, add_folder_name)
+            move_files_and_generate_m3u(working_directory, current_files_by_base, prefix, add_folder_name)
         else:
             # Generate M3U files without moving them
-            for base_name, filenames in files_by_base.items():
+            for base_name, filenames in current_files_by_base.items():
                 m3u_name = f"{base_name}.m3u"
-                with open(m3u_name, 'w') as m3u_file:
+                with open(os.path.join(working_directory, m3u_name), 'w') as m3u_file:
                     lines = [prefix + filename for filename in sorted(filenames) if not filename.endswith('.bin')]
                     m3u_file.write("\n".join([line.strip() for line in lines if line.strip()]))
 
             messagebox.showinfo("Info", "M3U files created.")
 
-    def reload_program():
-        """Reload the program by restarting the script."""
-        response = messagebox.askyesno("Reload Profiles", "Do you want to restart the script to reload profile dropdown list?")
-        if response:
-            # Restart the program
-            python = sys.executable
-            os.execl(python, python, *sys.argv)
-
     root = tk.Tk()
     root.title("M3U Generator")
+    
+    # Initialize selected_directory as the default directory
+    root.selected_directory = directory
+
+    # Add folder selection section at the top
+    folder_frame = tk.Frame(root)
+    folder_frame.pack(pady=10)
+    
+    directory_label = tk.Label(folder_frame, text=f"Current folder: {directory}", wraplength=400)
+    directory_label.pack(pady=5)
+    
+    tk.Button(folder_frame, text="Browse Folder", command=browse_folder, bg="blue", fg="white").pack(pady=5)
 
     tk.Label(root, text="M3U Tools").pack()
 
@@ -222,16 +267,13 @@ def generate_m3u(directory):
     cleaning_frame.pack(pady=10)
 
     cleaning_options = [
-        ("Clean script directory of .m3u files", "6"),
-        ("Move files back to script directory", "7"),
+        ("Clean directory of .m3u files", "6"),
+        ("Move files back to directory", "7"),
         ("Delete all empty subfolders", "8")
     ]
 
     for text, value in cleaning_options:
         tk.Radiobutton(cleaning_frame, text=text, variable=var, value=value).pack(anchor=tk.W)
-
-    # Add the reload button to restart the program
-    tk.Button(root, text="Reload Profile(s)", command=reload_program, bg="red", fg="white").pack(pady=10)
 
     tk.Button(root, text="Submit", command=on_submit, bg="green", fg="white").pack(pady=10)
     root.mainloop()
