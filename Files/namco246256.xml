@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gameList>
+	<game>
+		<path>./NM00001.chd</path>
+		<name>Ridge Racer V - Arcade Battle</name>
+		<desc>Ridge Racer V is a 2000 racing video game developed and published by Namco for the PlayStation 2. It was released as a launch title for the console and later followed by an arcade version subtitled Arcade Battle. Ridge Racer V is the fifth main title of the Ridge Racer series following R4: Ridge Racer Type 4 and the only one to be released on PlayStation 2 (excluding the spin-off R: Racing Evolution ).</desc>
+		<rating></rating>
+		<releasedate>20001128T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Racing</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00002.chd</path>
+		<name>Bloody Roar 3</name>
+		<desc>Bloody Roar 3 is a 2000 arcade fighting video game developed by Eighting and Hudson Soft. It is the sequel to Bloody Roar 2 (1998). Build on Namco System 246 hardware, it was ported to the PlayStation 2 in 2001, published by Activision in North America and by Virgin Interactive in Europe. Bloody Roar 3 was followed up by Bloody Roar Extreme on other platforms and Bloody Roar 4 on PlayStation 2.</desc>
+		<rating></rating>
+		<releasedate>20010301T000000</releasedate>
+		<developer>Eighting</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00003.chd</path>
+		<name>Vampire Night</name>
+		<desc>Vampire Night is a rail shooter / light gun game in which a struggle between light and dark, from three centuries back, is about to ensue. The parties involved are Michel and Albert, the two vampire hunters representing light, and the vampires representing dark. The story takes place in an alternate version of the year 2006 in France, when progress looks stuck in the late 19th century.</desc>
+		<rating></rating>
+		<releasedate>20011113T000000</releasedate>
+		<developer>Wow Entertainment</developer>
+		<publisher>Namco</publisher>
+		<genre>Lightgun Shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM10003.chd</path>
+		<name>Technic Beat</name>
+		<desc>Technic Beat ( テクニクビート, Tekuniku Bīto ) is an arcade music video game developed by Arika. It is a sequel to the PlayStation 2 game Technictix. The PlayStation 2 version of Technic Beat was published in North America by Mastiff. It was released in Japan in 2002 and the United States in 2004. In this game, players select a song from a preset list and then "play" their chosen song using their on-screen character.</desc>
+		<rating></rating>
+		<releasedate>20021107T000000</releasedate>
+		<developer>Arika</developer>
+		<publisher>Arika</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00004.chd</path>
+		<name>Tekken 4</name>
+		<desc>Tekken 4 ( 鉄拳4 ) is a 2001 fighting game developed and published by Namco for arcades. Initially released for Namco's System 246 hardware, it was then ported to the PlayStation 2 home console in 2002. As the fourth main installment in the Tekken series following Tekken 3 (1997), and the fifth overall following the non-canon title Tekken Tag Tournament (1999), the game harbored many gameplay revisions, such as the series-unique ability for the player to move about before the round begins and the introduction of walled stages.</desc>
+		<rating></rating>
+		<releasedate>20010801T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00005.chd</path>
+		<name>Wangan Midnight R</name>
+		<desc>Wangan Midnight R is a Racing game, developed and published by Namco, which was released in Japan in 2002.</desc>
+		<rating></rating>
+		<releasedate>20020606T000000</releasedate>
+		<developer>Genki</developer>
+		<publisher>Namco</publisher>
+		<genre>Racing</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00006.chd</path>
+		<name>Smash Court Pro Tournament</name>
+		<desc>Smash Court Tennis Pro Tournament, known in Japan as Smash Court Pro Tournament ( スマッシュコート プロトーナメント, SumasshuKōto PuroTōnamento ), is a 2002 sports video game developed and published by Namco for the PlayStation 2. The game features real-life professional tennis players, as well as the fictional Namco sports "image girl", Hitomi Yoshino ( 吉乃ひとみ ). It is the sequel to the Japan-exclusive 2000 PlayStation game Smash Court 3. The game was succeeded by Smash Court Tennis Pro Tournament 2 in 2004.</desc>
+		<rating></rating>
+		<releasedate>20020207T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Sports</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00007.chd</path>
+		<name>Soul Calibur II</name>
+		<desc>Soulcalibur II is a 2002 fighting game developed and published by Namco. It is the third installment in the Soulcalibur series of weapon-based fighting games as the sequel to Soulcalibur (1998). Originally intended to be released on Sega 's NAOMI arcade board, the game was built on the Namco System 246 board before being ported to the PlayStation 2, GameCube, and Xbox home consoles.</desc>
+		<rating></rating>
+		<releasedate>20020710T000000</releasedate>
+		<developer>Project Soul</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00008.chd</path>
+		<name>Wangan Midnight</name>
+		<desc>Wangan Midnight is a Racing game, developed and published by Namco, which was released in 2001.</desc>
+		<rating></rating>
+		<releasedate>20010101T000000</releasedate>
+		<developer>Genki</developer>
+		<publisher>Namco</publisher>
+		<genre>Racing</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00009.chd</path>
+		<name>Netchuu! Pro Baseball 2002</name>
+		<desc>Necchuu! Pro Yakyuu 2002 (熱チュー! プロ野球2002, lit. Necchū! Puro Yakyū 2002) is a baseball arcade game that was released by Namco in 2002 only in Japan; it runs on that company's System 246 hardware, and was produced under license from Fuji Television, as it features the voice of that network's then-39-year-old live sports commentator Masaharu Miyake.</desc>
+		<rating></rating>
+		<releasedate>20020418T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Baseball</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00010.chd</path>
+		<name>Battle Gear 3</name>
+		<desc>Released in Japanese arcades in November 2002, with the PlayStation 2 port (featuring some tracks and cars from Battle Gear 3 Tuned) in December 2003. The arcade version was distributed in North America by Betson Enterprises in 2004, with Honda cars present. The NESYS online service for both arcade and PlayStation 2 versions were closed on December 26, 2005.</desc>
+		<rating></rating>
+		<releasedate>20021101T000000</releasedate>
+		<developer>Taito</developer>
+		<publisher>Taito</publisher>
+		<genre>Racing</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00011.chd</path>
+		<name>Pride GP 2003</name>
+		<desc>Developed by Capcom and released in 2003 in Japan Pride GP Grand Prix 2003 featured nicely detailed character models, real life video entrances of the fighters, and a huge roster of fighters hailing from around the world.</desc>
+		<rating></rating>
+		<releasedate>20031105T000000</releasedate>
+		<developer>Dream Factory</developer>
+		<publisher>Capcom</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00012.chd</path>
+		<name>Time Crisis 3</name>
+		<desc>Time Crisis 3 is a 2003 light-gun shooter video game developed by Namco and Nextech and published by Namco for arcades. It is the third installment of the Time Crisis series. Like its predecessor, Time Crisis II, it allows for two players to cooperate in a link play environment and has the Time Crisis signature pedal system for hiding and advancing and the first in the series to change or select weapons. It was later ported to the PlayStation 2.</desc>
+		<rating></rating>
+		<releasedate>20030401T000000</releasedate>
+		<developer>Namco Nextech</developer>
+		<publisher>Namco</publisher>
+		<genre>Rail Shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00013.chd</path>
+		<name>Mobile Suit Gundam Zeta - A.E.U.G. vs. Titans</name>
+		<desc>Mobile Suit Z-Gundam: AEUG vs. Titans is an Action game, developed by Capcom and published by Banpresto, which was released in Japan in 2003.</desc>
+		<rating></rating>
+		<releasedate>20030901T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Fighting</genre>
+		<players>1-4</players>
+	</game>
+	<game>
+		<path>./NM00014.chd</path>
+		<name>Dragon Chronicle - Legendary Master Ark</name>
+		<desc>Dragon Chronicle: Legend of the Master Ark is a 2002 touch-screen arcade card game developed and published by Namco running on the Namco System 246 hardware.</desc>
+		<rating></rating>
+		<releasedate>20021201T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Card Game</genre>
+		<players>1-8</players>
+	</game>
+	<game>
+		<path>./NM00015.chd</path>
+		<name>Battle Gear 3 Tuned</name>
+		<desc>Battle Gear 3 Tuned is a Racing game, developed and published by Taito Corporation, which was released in Japan in 2003.</desc>
+		<rating></rating>
+		<releasedate>20031201T000000</releasedate>
+		<developer>Taito</developer>
+		<publisher>Taito</publisher>
+		<genre>Racing</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00016.chd</path>
+		<name>Zoids Infinity</name>
+		<desc>Zoids Infinity is a series of sci-fi shooter arcade games that can be used in conjunction with special swipe cards to unlock new features. Originally debuting in 2004 as a System 246 coin-operated arcade game from Taito in Japan.</desc>
+		<rating></rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>Taito</developer>
+		<publisher>Taito</publisher>
+		<genre>Rail Shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00017.chd</path>
+		<name>Mobile Suit Gundam Zeta - A.E.U.G. vs. Titans DX</name>
+		<desc>Kidou Senshi Z Gundam: AEUG vs. Titans DX is an Action game, developed and published by Banpresto, which was released in Japan in 2004.</desc>
+		<rating></rating>
+		<releasedate>20040901T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Fighting</genre>
+		<players>1-4</players>
+	</game>
+	<game>
+		<path>./NM00018.chd</path>
+		<name>Capcom Fighting Jam</name>
+		<desc>Capcom Fighting Jam, released in the US as Capcom Fighting Evolution, is a 2004 crossover fighting video game developed and published by Capcom. It was originally released for arcades on the Namco System 246 hardware and ported to the PlayStation 2 and Xbox. The game features characters from three different incarnations of the Street Fighter series, as well as characters from the Darkstalkers series and the CPS III arcade game Red Earth, with each character employing the fighting system from the game which they represent.</desc>
+		<rating></rating>
+		<releasedate>20041008T000000</releasedate>
+		<developer>Capcom Production Studio 2</developer>
+		<publisher>Capcom</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00019.chd</path>
+		<name>Tekken 5</name>
+		<desc>Tekken 5 ( 鉄拳5 ) is a 2004 fighting game developed and published by Namco for arcades, before being ported to the PlayStation 2 in 2005. It is the fifth main game in the Tekken series, marking the tenth anniversary of the series. The game is set shortly after the events of Tekken 4 featuring a new antagonist named Jinpachi Mishima taking over the Mishima Zaibatsu while a sidestory focuses on the protagonist Jin Kazama as he faces several enemies from the G Corporation. The home version also contains a collector's edition of sorts, as it includes the arcade versions of Tekken, Tekken 2, Tekken 3, and StarBlade.</desc>
+		<rating></rating>
+		<releasedate>20041116T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00020.chd</path>
+		<name>Dragon Chronicle Online - Great Sky Battle</name>
+		<desc>Dragon Chronicle Online is a touch-screen card arcade game that was released by Namco in 2004; it runs on Namco System 246 hardware, and as its name implies, it's the sequel to Dragon Chronicle: Legend of the Master Ark, which was released two years earlier.</desc>
+		<rating></rating>
+		<releasedate>20041101T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Card Game</genre>
+		<players>1-4</players>
+	</game>
+	<game>
+		<path>./NM00021.chd</path>
+		<name>Cobra - The Arcade</name>
+		<desc>Cobra The Arcade (コブラ・ザ・アーケード Kobura・Za・Ākēdo?) is a rail shooter video game developed and published by Namco.</desc>
+		<rating></rating>
+		<releasedate>20051101T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Rail Shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00022.chd</path>
+		<name>The IDOLM@STER</name>
+		<desc>The Idolmaster is a Japanese media franchise that began in 2005 with a raising simulation and rhythm video game series created by Bandai Namco Entertainment (formerly Namco ). The series primarily centers on the career of a producer who works with a group of young women who are aspiring or established idols at the talent agency 765 Production. Originally released as an arcade game, the franchise has grown to numerous ports, sequels and spin-offs across multiple video game consoles, including several social network games. The series includes a variety of other media such as an anime with the same name, printed media, audio dramas, a Korean drama, and radio shows.</desc>
+		<rating></rating>
+		<releasedate>20050726T000000</releasedate>
+		<developer>Metro Bandai Namco Studios Cygames QualiArts ILCA</developer>
+		<publisher>Namco Bandai Namco Entertainment</publisher>
+		<genre>Rhythm</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00023.chd</path>
+		<name>Taiko Drum Master 7</name>
+		<desc>Taiko no Tatsujin 7 (Japanese: 太鼓の達人7, Taiko no Tatsujin 7) is the seventh arcade Taiko no Tatsujin game released on July 15, 2005.</desc>
+		<rating></rating>
+		<releasedate>20050715T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00024.chd</path>
+		<name>Mobile Suit Gundam SEED - Federation vs. Z.A.F.T.</name>
+		<desc>Mobile Suit Gundam SEED: Alliance vs. Z.A.F.T. is a third-person arcade team-battle action game released by Capcom in 2005.</desc>
+		<rating></rating>
+		<releasedate>20050701T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-4</players>
+	</game>
+	<game>
+		<path>./NM00025.chd</path>
+		<name>Zoids Infinity - EX</name>
+		<desc>Released in June 2005, Zoids Infinity EX is an update of the original Zoids Infinity arcade game.</desc>
+		<rating></rating>
+		<releasedate>20050601T000000</releasedate>
+		<developer>Taito</developer>
+		<publisher>Taito</publisher>
+		<genre>Rail Shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00026.chd</path>
+		<name>Tekken 5 - Dark Resurrection</name>
+		<desc>Tekken 5: Dark Resurrection ( 鉄拳5 DARK RESURRECTION ), also known as Tekken: Dark Resurrection for the PlayStation Portable version, is a 2005 fighting game and a standalone update to Tekken 5. The arcade version was released in Japan in December 2005 and later worldwide in February 2006, while the PlayStation Portable version was released later that year in July 2006. It was also released as a downloadable game on the PlayStation 3 via the PlayStation Network online service in Japan in 2006 and the rest of the world in 2007. A sequel, Tekken 6 was released in 2007.</desc>
+		<rating></rating>
+		<releasedate>20051201T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00027.chd</path>
+		<name>Super Dragon Ball Z</name>
+		<desc>Super Dragon Ball Z ( Japanese: 超 ドラゴンボールZ, Hepburn: Sūpā Doragon Bōru Zetto ) is a cel-shaded 3D fighting video game, based on the Japanese manga series Dragon Ball created by Akira Toriyama. It was released in Japanese (December 22, 2005) and European (2006) arcades running on System 256 hardware, and later for the PlayStation 2 (Japan: June 29, 2006; US, July 18, 2006; PAL, July 28, 2006). The game was developed by Arika and Crafts &amp; Meister, headed by Noritaka Funamizu (a former Capcom fighting game producer who worked on the Street Fighter series and Darkstalkers ). The game features 18 playable characters, destructible environments, and a game engine geared towards fans of more traditional fighting games.</desc>
+		<rating></rating>
+		<releasedate>20051222T000000</releasedate>
+		<developer>Arika Crafts</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00028.chd</path>
+		<name>Druaga Online - The Story of Aon</name>
+		<desc>Druaga Online: The Story of Aon is an arcade multiplayer online RPG released in April 4, 2006 only in Japan. The game supports up to four player simultaneous co-op. The game was taken offline on October 1, 2009.</desc>
+		<rating></rating>
+		<releasedate>20060404T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>RPG</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00029.chd</path>
+		<name>Kinnikuman Muscle Grand Prix</name>
+		<desc>Kinnikuman Muscle Grand Prix ( キン肉マン マッスルグランプリ ) is a series of fighting video game developed by AKI Corporation, based on the popular Kinnikuman manga and anime series from Weekly Shonen Jump.</desc>
+		<rating></rating>
+		<releasedate>20060315T000000</releasedate>
+		<developer>Aki Corporation</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00030.chd</path>
+		<name>Mobile Suit Gundam Quiz Warrior</name>
+		<desc>Quiz Kidou Senshi Gundam: Mon Senshi is a Miscellaneous game, developed and published by Banpresto, which was released in Japan in 2006.</desc>
+		<rating></rating>
+		<releasedate>20060425T000000</releasedate>
+		<developer>Banpresto</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Trivia</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00031.chd</path>
+		<name>Soul Calibur III - Arcade Edition</name>
+		<desc>Soulcalibur III ( ソウルキャリバーIII, Sōrukyaribā Surī ) is a 2005 fighting game developed and published by Namco as a sequel to Soulcalibur II (2002) and the fourth installment in the Soulcalibur series. It was originally released for the PlayStation 2 and was followed by an improved arcade version, subtitled Arcade Edition, in 2006. It was the last Soulcalibur game to receive an arcade version and was also the last to be released by Namco as an independent company. Soulcalibur III received a mainly positive reception, and it was followed by a sequel under Namco Bandai Games, Soulcalibur IV (2008).</desc>
+		<rating></rating>
+		<releasedate>20051025T000000</releasedate>
+		<developer>Project Soul</developer>
+		<publisher>Namco</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00032.chd</path>
+		<name>Time Crisis 4</name>
+		<desc>Time Crisis 4 is a 2006 light-gun shooter video game developed by Namco Bandai Games and Nex Entertainment and published by Namco Bandai Games for arcades. It is the fourth main installment of the Time Crisis series. It was ported to the PlayStation 3 in 2007, where it features a new first-person shooter mode. It was later re-released as part of Time Crisis: Razing Storm with support for the PlayStation Move controller, without the first-person shooter mode.</desc>
+		<rating></rating>
+		<releasedate>20060620T000000</releasedate>
+		<developer>Namco Bandai Games</developer>
+		<publisher>Namco Bandai Games</publisher>
+		<genre>Light Gun Shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00033.chd</path>
+		<name>Taiko Drum Master 8</name>
+		<desc>Taiko no Tatsujin 8 (Japanese: 太鼓の達人8, Taiko no Tatsujin 8) is the eighth arcade Taiko no Tatsujin game released on March 23, 2006.</desc>
+		<rating></rating>
+		<releasedate>20060323T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00034.chd</path>
+		<name>Mobile Suit Gundam SEED Destiny - Federation vs. Z.A.F.T. II</name>
+		<desc>Kidou Senshi Gundam Seed Destiny: Rengou vs. Z.A.F.T. II ( 機動戦士ガンダムSEED DESTINY 連合vs.Z.A.F.T.II ) ( Rengou meaning "Alliance") is a 2006 third person arcade game developed by Capcom and published by Namco Bandai Games. It is the sequel to Kidou Senshi Gundam Seed: Rengou vs. Z.A.F.T. with a slightly revised fighting system, new units and characters, and updates to old characters. Playable characters and units are taken from Mobile Suit Gundam SEED as well its sequel Mobile Suit Gundam SEED Destiny. Whereas the console version of its prequel had only a few units and playable characters from the beginning of Mobile Suit Gundam SEED Destiny such as the Impulse Gundam, RvZ2 includes characters and units from the entire series, such as the Strike Freedom Gundam and Infinite Justice Gundam</desc>
+		<rating></rating>
+		<releasedate>20060629T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Action-Adventure</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00035.chd</path>
+		<name>The Battle of YuYu Hakusho - Deathmatch! Dark Martial Arts Association</name>
+		<desc>The Battle of YuYu Hakusho: Deathmatch! Dark Martial Arts Association (known in Japan as Yu Yu Hakusho: Shitou! Ankoku Bujutsukai!) is a 2006 3D arcade fighting game developed by Dimps and published by Banpresto, which was later ported to the PlayStation 2 as an expanded version.</desc>
+		<rating></rating>
+		<releasedate>20060926T000000</releasedate>
+		<developer>Dimps Corporation</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00036.chd</path>
+		<name>Whole Brain Training With Everybody</name>
+		<desc>Minna de Kitaeru Zenno Training ( みんなで鍛える全脳トレーニング, Minna de Kitaeru Zennō torēningu ) is an arcade game released only in Japan by Namco Bandai Games on December 21, 2006.</desc>
+		<rating></rating>
+		<releasedate>20061221T000000</releasedate>
+		<developer>Namco Bandai Games</developer>
+		<publisher>Namco Bandai Games</publisher>
+		<genre>Quiz</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00037.chd</path>
+		<name>Quiz &amp; Variety Suku Suku Inufuku 2 - More Suku Suku</name>
+		<desc>As the sequel to SukuSuku Inufuku ("quickly, lucky dog"), Motto SukuSuku ("more quickly") again features the rather odd-looking dog Inufuku, who also has cameos in some of the later Sonic Wings games. The game spans a year; in January, the player adopts an Inufuku to raise. Throughout the year, the player encounters a variety of characters who challenge her/him to quizzes and competitive games. The player's performance on the challenges influences how her/his Inufuku looks as it grows up. The characters, locations, and title cards for each month that show up in the game also vary. Lord River-n-White also appears as Taro Kitashirakawa, the name he is given in Rabio Lepus, and Mao Mao also has a cameo.</desc>
+		<rating></rating>
+		<releasedate>20070323T000000</releasedate>
+		<developer>Hamster Coporation</developer>
+		<publisher>AMI</publisher>
+		<genre>Quiz</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00038.chd</path>
+		<name>Taiko Drum Master 9</name>
+		<desc>Taiko no Tatsujin 9 (Japanese: 太鼓の達人9 Taiko no Tatsujin 9) is the ninth entry of Taiko no Tatsujin arcade game released in December 20, 2006.</desc>
+		<rating></rating>
+		<releasedate>20060120T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Namco</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00039.chd</path>
+		<name>MotoGP</name>
+		<desc>MotoGP is a racing arcade game that was released by Namco Bandai Games in 2007; it runs on the company's N2 hardware, and is based on their direct-to-console MotoGP series which ran from 2000 until 2006. It allows for a maximum of eight people to play simultaneously when up to four two-player cabinets are linked together, and the players can choose seven types of real-life motorcycles (Honda RC-211V, Yamaha YZR-M1, Ducati Desmosedici GP-6, Team Roberts KR-211V, Kawasaki Ninja ZX-RR, Suzuki GSV-R and Ilmor X3) - however, if less than eight players are present, up to seven then-current MotoGP racers shall fill in for absent ones on their own cycles as CPU-controlled opponents. There are also three real-world tracks (the Mugello Circuit in Italy, the Circuit Ricardo Tormo in Spain and the Sepang International Circuit in Malaysia) for the races to take place on; the first and second of these tracks are described as "technical" in the game while the third is described as "high speed".</desc>
+		<rating></rating>
+		<releasedate>20070101T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Racing</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00040.chd</path>
+		<name>Kinnikuman Muscle Grand Prix 2</name>
+		<desc>Kinnikuman Muscle Grand Prix (キン肉マン マッスルグランプリ) is a series of fighting video game developed by AKI Corporation, based on the popular Kinnikuman manga and anime series from Weekly Shonen Jump.</desc>
+		<rating></rating>
+		<releasedate>20070621T000000</releasedate>
+		<developer>syn Sophia</developer>
+		<publisher>Banpresto</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00041.chd</path>
+		<name>Taiko Drum Master 10</name>
+		<desc>The 10th arcade Taiko, released on July 2007. Another big step for the series, this version was the first one to have secret unlockable songs deep within the arcade software.</desc>
+		<rating></rating>
+		<releasedate>20070726T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00042.chd</path>
+		<name>Sengoku Basara X</name>
+		<desc>A spin-off of the Devil Kings / Basara franchise, this title is a 2D fighting game by Arc System Works featuring characters from the franchise and an update of the arcade game of the same name featuring a challenge mode and newly-playable characters Kojuro Katakura and Hanbei Takanaka.
+
+Manga based on this game was released on magazine in 2006. A 12-part Episode anime based on this game was released on DVD in 2009.</desc>
+		<rating></rating>
+		<releasedate>20080409T000000</releasedate>
+		<developer>Arc System Works</developer>
+		<publisher>Capcom</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00043.chd</path>
+		<name>Mobile Suit Gundam - Gundam vs. Gundam</name>
+		<desc>Mobile Suit Gundam: Gundam vs. Gundam (機動戦士ガンダム ガンダムvs.ガンダム|Kidō senshi Gandamu Gandamu vs. Gandamu) is an arcade game developed by Capcom and published by Bandai Namco Games, released in March 2008. Unlike the previous games, this game crosses over multiple Gundam series rather than focusing on one source material. The game features up to 30 different Mobile Suits, and a play system similar to previous titles in the Gundam Vs. series.</desc>
+		<rating></rating>
+		<releasedate>20080301T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Namco</publisher>
+		<genre>Shooting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00044.chd</path>
+		<name>Taiko Drum Master 11</name>
+		<desc>Taiko no Tatsujin 11 (Japanese: 太鼓の達人11, Taiko no Tatsujin 11) is the eleventh arcade Taiko no Tatsujin game released on March 18, 2008.</desc>
+		<rating></rating>
+		<releasedate>20080318T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00045.chd</path>
+		<name>Taiko Drum Master 11 - Taiwan Edition</name>
+		<desc>Taiko no Tatsujin 11: Asian Version was the version of Taiko no Tatsujin 11 that was localized to China. It was the first release of Taiko no Tatsujin in the arcades to be localized to Mainland China, as well as Taiwan, and Hong Kong.
+
+The Chinese versions also featured the C-Pop genre, which hosted Chinese pop songs. The voices for Don-chan, and Katsu-chan were given Chinese voices for the Asian Version.</desc>
+		<rating></rating>
+		<releasedate>20080318T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00046.chd</path>
+		<name>Taiko Drum Master 11 - Asian Edition</name>
+		<desc>Taiko no Tatsujin 11: Asian Version was the version of Taiko no Tatsujin 11 that was localized to China. It was the first release of Taiko no Tatsujin in the arcades to be localized to Mainland China, as well as Taiwan, and Hong Kong.
+
+The Chinese versions also featured the C-Pop genre, which hosted Chinese pop songs. The voices for Don-chan, and Katsu-chan were given Chinese voices for the Asian Version.</desc>
+		<rating></rating>
+		<releasedate>20080318T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00047.chd</path>
+		<name>Ace Driver 3 - Final Turn</name>
+		<desc>Ace Driver 3: Final Turn is a Racing game, developed and published by Namco, which was released in Japan in 2008.</desc>
+		<rating></rating>
+		<releasedate>20080901T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Racing</genre>
+		<players>1-4</players>
+	</game>
+	<game>
+		<path>./NM00048.chd</path>
+		<name>Fate - Unlimited Codes</name>
+		<desc>Fate/Unlimited Codes is a fighting game developed by Eighting and published by Capcom. It was first released on June 11, 2008 for the Namco System 246 arcade system in Japan, later receiving a port to the PlayStation 2 in December 2008. An enhanced port for the PlayStation Portable would be released on June 18, 2009 in Japan. The game was subsequently localized and released digitally for the PlayStation Store in North America and Europe in September 2009, and later delisted in May 2012.</desc>
+		<rating></rating>
+		<releasedate>20080611T000000</releasedate>
+		<developer>Eighting</developer>
+		<publisher>Capcom</publisher>
+		<genre>Fighting</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./NM00051.chd</path>
+		<name>Taiko Drum Master 12</name>
+		<desc>Taiko no Tatsujin 12 is an Action game, developed and published by Namco, which was released in Japan in 2008.</desc>
+		<rating></rating>
+		<releasedate>20081211T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00052.chd</path>
+		<name>Mobile Suit Gundam - Gundam vs. Gundam NEXT</name>
+		<desc>Kidou Senshi Gundam: Gundam vs. Gundam NEXT is an Action game, developed by Banpresto and published by Bandai Namco Games, which was released in Japan in 2009.</desc>
+		<rating></rating>
+		<releasedate>20090318T000000</releasedate>
+		<developer>Banpresto</developer>
+		<publisher>Namco</publisher>
+		<genre>Action</genre>
+		<players>1-4</players>
+	</game>
+	<game>
+		<path>./NM00053.chd</path>
+		<name>Taiko Drum Master 12 - Taiwan Edition</name>
+		<desc>Taiko no Tatsujin 12 is an Action game, developed and published by Namco, which was released in Japan in 2008.</desc>
+		<rating></rating>
+		<releasedate>20081211T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00054.chd</path>
+		<name>Taiko Drum Master 12 - Asian Edition</name>
+		<desc>Taiko no Tatsujin 12 is an Action game, developed and published by Namco, which was released in Japan in 2008.</desc>
+		<rating></rating>
+		<releasedate>20081211T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00056.chd</path>
+		<name>Taiko Drum Master 13</name>
+		<desc>Taiko no Tatsujin 13 is an Action game, developed and published by Namco, which was released in Japan in 2009.</desc>
+		<rating></rating>
+		<releasedate>20091217T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./NM00057.chd</path>
+		<name>Taiko Drum Master 14</name>
+		<desc>Taiko no Tatsujin 14 (Japanese: 太鼓の達人14, Taiko no Tatsujin 14) is the fourteen arcade Taiko no Tatsujin game released on September 8, 2010.</desc>
+		<rating></rating>
+		<releasedate>20100908T000000</releasedate>
+		<developer>Taiko Team</developer>
+		<publisher>Bandai Namco Games</publisher>
+		<genre>Rhythm</genre>
+		<players>1</players>
+	</game>
+</gameList>
